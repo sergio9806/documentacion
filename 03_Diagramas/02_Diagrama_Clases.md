@@ -117,18 +117,18 @@ classDiagram
     }
     
     %% Relaciones principales
-    Product ||--o{ Variant : "tiene variantes"
-    Product }o--|| Category : "pertenece a"
-    Product }o--o| SubCategory : "pertenece a"
-    SubCategory }o--|| Category : "pertenece a"
-    Order ||--o{ OrderItem : "contiene"
-    Order }o--|| Address : "tiene dirección"
-    Order }o--o| User : "pertenece a"
-    OrderItem }o--|| Product : "referencia"
-    OrderItem }o--o| Variant : "referencia"
-    Product ||--o{ Image : "tiene imágenes"
-    Variant ||--o{ Image : "tiene imágenes"
-    Category ||--o{ Image : "tiene imagen"
+    Product ||--o{ Variant
+    Product }o--|| Category
+    Product }o--o| SubCategory
+    SubCategory }o--|| Category
+    Order ||--o{ OrderItem
+    Order }o--|| Address
+    Order }o--o| User
+    OrderItem }o--|| Product
+    OrderItem }o--o| Variant
+    Product ||--o{ Image
+    Variant ||--o{ Image
+    Category ||--o{ Image
     
     %% Estilos
     classDef entity fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
