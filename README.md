@@ -63,6 +63,13 @@ parritico/
 - **Funcionalidades**: Autenticación, Dashboard, Productos, Categorías, Subcategorías, Órdenes, Contactos, Usuarios
 - **Ver más**: [README de Diagramas Admin](./03_Diagramas/diagramas_casos_uso_front-admin-parritico/README.md)
 
+#### 1.6 Diagramas del E-commerce Público
+- **Carpeta**: `diagramas_casos_uso_ecommerce-parritico/`
+- **Descripción**: Casos de uso del e-commerce público
+- **Contenido**: 6 documentos con diagramas Mermaid detallados
+- **Funcionalidades**: Navegación, Carrito, Checkout, Pagos (Onvo/Stripe), Contacto
+- **Ver más**: [README de Diagramas E-commerce](./03_Diagramas/diagramas_casos_uso_ecommerce-parritico/README.md)
+
 ### 2. 🎯 Metodología de Desarrollo
 **Archivo**: `02_Metodologia.md`
 
