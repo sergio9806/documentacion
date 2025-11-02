@@ -109,7 +109,7 @@ sequenceDiagram
     
     SocketClient->>AdminLayout: Recibir evento
     AdminLayout->>Notification: Mostrar notificación
-    Note over Notification: "📩 Nuevo mensaje de contacto: {nombre}"
+    Note over Notification: "Nuevo mensaje de contacto: nombre"
     
     AdminLayout->>AdminLayout: setPendingCount(prev => prev + 1)
     

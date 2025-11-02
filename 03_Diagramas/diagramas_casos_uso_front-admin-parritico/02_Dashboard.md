@@ -44,20 +44,20 @@ sequenceDiagram
 
 ```mermaid
 graph TD
-    A[Dashboard Admin] --> B[Card: Total Ventas]
-    A --> C[Card: Total Órdenes]
-    A --> D[Card: Productos Activos]
-    A --> E[Card: Categorías/Subcategorías]
-    A --> F[Tabla: Últimas 5 Órdenes]
+    A[Dashboard Admin] --> B[Card Total Ventas]
+    A --> C[Card Total Ordenes]
+    A --> D[Card Productos Activos]
+    A --> E[Card Categorias Subcategorias]
+    A --> F[Tabla Ultimas 5 Ordenes]
     
-    F --> G{¿Hay órdenes?}
-    G -->|Sí| H[Mostrar datos con Tags de estado]
-    G -->|No| I[Mostrar mensaje "No hay órdenes recientes"]
+    F --> G{Hay ordenes?}
+    G -->|Si| H[Mostrar datos con Tags de estado]
+    G -->|No| I[Sin ordenes]
     
-    B --> J[Mostrar ₡X.XXX]
-    C --> K[Mostrar Número]
-    D --> L[Mostrar Número]
-    E --> M[Mostrar X / Y]
+    B --> J[Mostrar Total Ventas]
+    C --> K[Mostrar Numero]
+    D --> L[Mostrar Numero]
+    E --> M[Mostrar X Y]
 ```
 
 ## Vista de Organizador
