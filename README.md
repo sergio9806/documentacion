@@ -56,6 +56,13 @@ parritico/
 - **Componentes**: Frontend, Backend, Base de datos, Servicios externos
 - **Tecnologías**: React, Node.js, MongoDB, Onvo, Cloudinary
 
+#### 1.5 Diagramas del Panel Administrativo
+- **Carpeta**: `diagramas_casos_uso_front-admin-parritico/`
+- **Descripción**: Casos de uso específicos del panel administrativo
+- **Contenido**: 8 documentos con diagramas Mermaid detallados
+- **Funcionalidades**: Autenticación, Dashboard, Productos, Categorías, Subcategorías, Órdenes, Contactos, Usuarios
+- **Ver más**: [README de Diagramas Admin](./03_Diagramas/diagramas_casos_uso_front-admin-parritico/README.md)
+
 ### 2. 🎯 Metodología de Desarrollo
 **Archivo**: `02_Metodologia.md`
 

@@ -7,116 +7,114 @@ Este diagrama muestra la estructura de clases del sistema Parritico Store basado
 
 ```mermaid
 classDiagram
-    %% Entidades principales
     class User {
-        +ObjectId _id
-        +String email
-        +String password
-        +String role
-        +Date createdAt
-        +Date updatedAt
+        +_id
+        +email
+        +password
+        +role
+        +createdAt
+        +updatedAt
     }
     
     class Product {
-        +ObjectId _id
-        +String name
-        +String slug
-        +String description
-        +String brand
-        +ObjectId category
-        +ObjectId subcategory
-        +Number basePrice
-        +Number stock
-        +Array~Image~ images
-        +Array~Variant~ variants
-        +Object attributes
-        +Boolean isActive
-        +Date createdAt
-        +Date updatedAt
+        +_id
+        +name
+        +slug
+        +description
+        +brand
+        +category
+        +subcategory
+        +basePrice
+        +stock
+        +images
+        +variants
+        +attributes
+        +isActive
+        +createdAt
+        +updatedAt
     }
     
     class Variant {
-        +ObjectId _id
-        +String sku
-        +String size
-        +String color
-        +Number stock
-        +Number price
-        +Array~Image~ images
+        +_id
+        +sku
+        +size
+        +color
+        +stock
+        +price
+        +images
     }
     
     class Category {
-        +ObjectId _id
-        +String name
-        +String slug
-        +Object image
-        +Boolean isActive
-        +Date createdAt
-        +Date updatedAt
+        +_id
+        +name
+        +slug
+        +image
+        +isActive
+        +createdAt
+        +updatedAt
     }
     
     class SubCategory {
-        +ObjectId _id
-        +String name
-        +String slug
-        +ObjectId category
-        +Boolean isActive
-        +Date createdAt
-        +Date updatedAt
+        +_id
+        +name
+        +slug
+        +category
+        +isActive
+        +createdAt
+        +updatedAt
     }
     
     class Order {
-        +ObjectId _id
-        +Number invoiceNumber
-        +ObjectId user
-        +String email
-        +Array~OrderItem~ items
-        +Number amount
-        +String currency
-        +Object shippingAddress
-        +String paymentProvider
-        +String paymentIntentId
-        +String status
-        +Date createdAt
-        +Date updatedAt
+        +_id
+        +invoiceNumber
+        +user
+        +email
+        +items
+        +amount
+        +currency
+        +shippingAddress
+        +paymentProvider
+        +paymentIntentId
+        +status
+        +createdAt
+        +updatedAt
     }
     
     class OrderItem {
-        +ObjectId product
-        +String name
-        +Object variant
-        +Number unitPrice
-        +Number quantity
-        +String image
+        +product
+        +name
+        +variant
+        +unitPrice
+        +quantity
+        +image
     }
     
     class Address {
-        +String fullName
-        +String phone
-        +String line1
-        +String line2
-        +String city
-        +String state
-        +String zip
-        +String country
+        +fullName
+        +phone
+        +line1
+        +line2
+        +city
+        +state
+        +zip
+        +country
     }
     
     class Contact {
-        +ObjectId _id
-        +String name
-        +String email
-        +String subject
-        +String message
-        +String status
-        +Date createdAt
+        +_id
+        +name
+        +email
+        +subject
+        +message
+        +status
+        +createdAt
     }
     
     class Image {
-        +String url
-        +String public_id
+        +url
+        +public_id
     }
     
-    %% Relaciones principales
     Product ||--o{ Variant
     Product }o--|| Category
     Product }o--o| SubCategory
@@ -129,15 +127,6 @@ classDiagram
     Product ||--o{ Image
     Variant ||--o{ Image
     Category ||--o{ Image
-    
-    %% Estilos
-    classDef entity fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
-    classDef valueObject fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    classDef embedded fill:#fff8e1,stroke:#f57c00,stroke-width:2px
-    
-    class User,Product,Category,SubCategory,Order,Contact entity
-    class Address,Image valueObject
-    class Variant,OrderItem embedded
 ```
 
 ## Descripción de Clases
